@@ -212,6 +212,10 @@ approvals. It opens files through code-server on the relevant VPS. Zed, JetBrain
 
 ## Options for the base
 
+> **Update:** after we chose Rust + TypeScript and a desktop app, the recommendation changed to building our own
+> Tauri app with a Rust hub and runners (close to option C). See
+> [../architecture/overview.md](../architecture/overview.md).
+
 | Option | Pros | Cons |
 |---|---|---|
 | **A. Fork Orca** (MIT, TS/Electron) | Most complete UX and largest community. Mobile apps and SSH remotes already exist. | The desktop app is the hub and VPSes are just SSH targets. With ~7k open issues it changes fast, so a fork would drift quickly. |
